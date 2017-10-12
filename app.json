@@ -1,0 +1,13 @@
+{
+    "name"        : "APP",
+    "script"      : "app.js",
+    // "cwd"         : "/app/",
+    "instances"   : 4,
+    "exec_mode"   : "cluster",
+    "env": {
+      "NODE_ENV"  : "production"
+    },
+    "watch"       : true,
+    "error_file": "/var/log/error.log",
+    "out_file":   "/var/log/node.log"
+}

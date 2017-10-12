@@ -1,0 +1,11 @@
+version: "2.0"
+
+services: 
+  web: 
+    image: pm2-test
+    volumes:
+      - .:/app
+      - /Users/veryci/log:/var/log
+    ports:
+      - "8000:8000"
+      - "5858:5858"
